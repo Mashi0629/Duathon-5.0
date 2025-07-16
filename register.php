@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 if ($conn->connect_error) die("Connection failed: " . $conn->connect_error);
 
 $team_name = $_POST['team_name'];
