@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit;
 }
 
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 // Get team count
 $teamResult = $conn->query("SELECT COUNT(*) AS total_teams FROM teams");
