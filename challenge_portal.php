@@ -5,7 +5,7 @@ if (!isset($_SESSION['team_id'])) {
     exit;
 }
 
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 $team_id = $_SESSION['team_id'];
 
