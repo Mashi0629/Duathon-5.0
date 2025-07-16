@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit;
 }
 
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 $team_id = $_GET['team_id'];
 $team = $conn->query("SELECT * FROM teams WHERE id=$team_id")->fetch_assoc();
