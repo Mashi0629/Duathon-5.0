@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 $username = $_POST['username'];
 $password = $_POST['password'];
