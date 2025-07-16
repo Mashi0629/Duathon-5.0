@@ -5,7 +5,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     exit;
 }
 
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 $search = $_GET['search'] ?? '';
 $searchQuery = $search ? "WHERE team_name LIKE '%$search%'" : '';
