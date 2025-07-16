@@ -4,7 +4,7 @@ if (!isset($_SESSION['admin_logged_in'])) {
     header("Location: admin_login.html");
     exit;
 }
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 // Handle Delete
 if (isset($_GET['delete'])) {
