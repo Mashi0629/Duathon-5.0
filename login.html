@@ -1,24 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Team Login | OASIS Reboot</title>
   <style>
-    body { font-family: 'Arial'; background-color: #001f3f; color: #fff; text-align: center; padding: 50px; }
-    form { background: #111144; padding: 20px; border-radius: 10px; display: inline-block; }
-    input { margin: 10px; padding: 10px; border-radius: 5px; width: 250px; }
-    button { padding: 10px 20px; border: none; background: #2ecc71; color: white; border-radius: 5px; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #001f3f;
+      color: #fff;
+      text-align: center;
+      padding: 50px;
+    }
+    form {
+      background: #111144;
+      padding: 20px;
+      border-radius: 10px;
+      display: inline-block;
+    }
+    input {
+      margin: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      width: 250px;
+      font-size: 16px;
+      border: none;
+    }
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #2ecc71;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background: #27ae60;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
   </style>
-  <link rel="stylesheet" href="style.css">
+  <!-- Remove or keep if style.css exists -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-
 </head>
 <body>
   <h2>Team Login</h2>
-  <form method="POST" action="login.php">
-    <input type="email" name="email" placeholder="Email" required><br>
-    <input type="password" name="password" placeholder="Password" required><br>
+  <form method="POST" action="login.php" autocomplete="off">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" placeholder="Email" autocomplete="email" required>
+
+    <label for="password">Password</label>
+    <input id="password" type="password" name="password" placeholder="Password" autocomplete="current-password" required>
+
     <button type="submit">Login</button>
   </form>
 </body>
