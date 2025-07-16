@@ -1,6 +1,10 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 $email = $_POST['email'];
 $password = $_POST['password'];
