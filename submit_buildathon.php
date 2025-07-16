@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "oasis_db");
+$conn = new mysqli("localhost", "root", "", "oasis");
 
 $team_id = $_SESSION['team_id'];
 $challenge_id = $_POST['challenge_id'];
